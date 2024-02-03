@@ -17,9 +17,9 @@
         android:text="Next"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintBottom_toBottomOf="@+id/btnShare"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintTop_toTopOf="@+id/btnShare" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/optionContainer"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/option4"
+            android:id="@+id/optionD"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -45,10 +45,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/option3" />
+            app:layout_constraintTop_toBottomOf="@+id/optionC" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/option3"
+            android:id="@+id/optionC"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -61,10 +61,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/option2" />
+            app:layout_constraintTop_toBottomOf="@+id/optionB" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/option2"
+            android:id="@+id/optionB"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -77,10 +77,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/option1" />
+            app:layout_constraintTop_toBottomOf="@+id/optionA" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/option1"
+            android:id="@+id/optionA"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -101,7 +101,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/stopwatch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/stopwatch" />
@@ -125,7 +125,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/question"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/question" />
@@ -172,7 +172,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button5"
+        android:id="@+id/btnShare"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

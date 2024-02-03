@@ -41,7 +41,7 @@ public class SetAdapter extends RecyclerView.Adapter<SetAdapter.viewHolder>{
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent  = new Intent(context, QuestionActivity.class);
                 intent.putExtra("set", model.getSetName());
                 context.startActivity(intent);

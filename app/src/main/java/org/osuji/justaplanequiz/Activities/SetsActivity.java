@@ -32,14 +32,6 @@ public class SetsActivity extends AppCompatActivity {
 
         list.add(new SetModel("SET-1"));
         list.add(new SetModel("SET-2"));
-        list.add(new SetModel("SET-3"));
-        list.add(new SetModel("SET-4"));
-        list.add(new SetModel("SET-5"));
-        list.add(new SetModel("SET-6"));
-        list.add(new SetModel("SET-7"));
-        list.add(new SetModel("SET-8"));
-        list.add(new SetModel("SET-9"));
-        list.add(new SetModel("SET-10"));
 
         SetAdapter adapter = new SetAdapter(this,list);
         binding.setsRecy.setAdapter(adapter);

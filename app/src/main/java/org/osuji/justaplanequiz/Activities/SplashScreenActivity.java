@@ -16,7 +16,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        getSupportActionBar().hide();
+        // Check if getSupportActionBar() returns non-null before calling hide()
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -24,6 +27,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
                 startActivity(intent);
             }
-        }, 2000);
+        }, 500);
     }
 }

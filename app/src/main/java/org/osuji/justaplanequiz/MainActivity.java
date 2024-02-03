@@ -11,16 +11,19 @@ import org.osuji.justaplanequiz.Activities.SetsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView airport,aerodynamics;
+    CardView airport,aerodynamics, pilot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().hide();
+
+        pilot = findViewById(R.id.Pilot);
         airport = findViewById(R.id.Airport);
         aerodynamics = findViewById(R.id.Aerodynamics);
 
-        airport.setOnClickListener(new View.OnClickListener() {
+        pilot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SetsActivity.class);
